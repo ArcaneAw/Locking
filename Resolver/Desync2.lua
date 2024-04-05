@@ -1,7 +1,4 @@
-getgenv().MichaelJackson = true --/keep this true
-getgenv().ArcaneBeNigga = false --/ toggle true if u want it to be forever
-
-			  game:GetService("StarterGui"):SetCore("SendNotification", { 
+game:GetService("StarterGui"):SetCore("SendNotification", { 
                     Title = "Resolver";
                     Text = "Resolve any Desync";
                     Icon = "rbxthumb://type=Asset&id=&w=150&h=150"})
