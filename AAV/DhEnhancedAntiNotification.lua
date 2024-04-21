@@ -1,4 +1,8 @@
---ui
+--[[
+notify("message",Color3.fromRGB(147, 80, 186),2,false)
+
+getgenv().velostats = true / false
+]]
 local Notification = Instance.new("ScreenGui")
 local Holder = Instance.new("Frame")
 
@@ -102,7 +106,7 @@ function notify(text,color,time,rainbowmode)
         end)
     end)
 end
-notify(".gg/CONSIST",Color3.fromRGB(147, 80, 186),2,false)
+
 
 local Stats = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
