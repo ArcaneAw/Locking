@@ -6,17 +6,17 @@ getgenv().velostats = true / false
 local Notification = Instance.new("ScreenGui")
 local Holder = Instance.new("Frame")
 
-Notification.Name = "Notification"
-Notification.Parent = game.CoreGui
-Notification.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Instance.new("ScreenGui").Name = "Notification"
+Instance.new("ScreenGui").Parent = game.CoreGui
+Instance.new("ScreenGui").ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-Holder.Name = "Holder"
-Holder.Parent = Notification
-Holder.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-Holder.BackgroundTransparency = 1.000
-Holder.BorderColor3 = Color3.fromRGB(27, 42, 53)
-Holder.Position = UDim2.new(0.0072954637, 0, 0.0105048735, 0)
-Holder.Size = UDim2.new(0, 243, 0, 240)
+Instance.new("Frame").Name = "Holder"
+Instance.new("Frame").Parent = Notification
+Instance.new("Frame").BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Instance.new("Frame").BackgroundTransparency = 1.000
+Instance.new("Frame").BorderColor3 = Color3.fromRGB(27, 42, 53)
+Instance.new("Frame").Position = UDim2.new(0.0072954637, 0, 0.0105048735, 0)
+Instance.new("Frame").Size = UDim2.new(0, 243, 0, 240)
 
 Instance.new("UIListLayout").Parent = Holder
 Instance.new("UIListLayout").SortOrder = Enum.SortOrder.LayoutOrder
@@ -106,14 +106,12 @@ function notify(text,color,time,rainbowmode)
         end)
     end)
 end
-
-
+--< Velocity Stats >--
 local Stats = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local Frame2 = Instance.new("Frame")
 local TopLine = Instance.new("Frame")
 local TopLine2 = Instance.new("Frame")
-local UIListLayout = Instance.new("UIListLayout")
 local ClientStatsLabel = Instance.new("Frame")
 local Index = Instance.new("TextLabel")
 local Stats_Velocity = Instance.new("Frame")
@@ -169,8 +167,8 @@ TopLine2.BorderSizePixel = 0
 TopLine2.Position = UDim2.new(1, -15, 0.378, 0)
 TopLine2.Size = UDim2.new(0, 200, 0, 1)
 
-UIListLayout.Parent = Frame
-UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+Instance.new("UIListLayout").Parent = Frame
+Instance.new("UIListLayout").SortOrder = Enum.SortOrder.LayoutOrder
 
 ClientStatsLabel.Name = "ClientStatsLabel"
 ClientStatsLabel.Parent = Frame
