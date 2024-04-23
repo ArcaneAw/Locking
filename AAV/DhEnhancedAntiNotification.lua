@@ -390,3 +390,69 @@ game:GetService("RunService").Heartbeat:Connect(
         Frame2.Visible = getgenv().velostats
     end
 )
+--Stats
+local StatsFrame = Instance.new("Frame", TargStats)
+StatsFrame.Name = "AntiGUI"
+StatsFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+StatsFrame.BorderSizePixel = 0
+StatsFrame.Position = UDim2.new(0.388957828, 0, 0.700122297, 0)
+StatsFrame.Size = UDim2.new(0, 360, 0, 70)
+
+local StatsTop = Instance.new("Frame", StatsFrame)
+StatsTop.Name = "AntiGUI"
+StatsTop.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+StatsTop.BorderSizePixel = 0
+StatsTop.Position = UDim2.new(0, 0, -0.101449274, 0)
+StatsTop.Size = UDim2.new(0, 360, 0, 7.5)
+
+local StatsName = Instance.new("TextLabel", StatsFrame)
+StatsName.Name = "AntiGUI"
+StatsName.BackgroundTransparency = 1
+StatsName.Position = UDim2.new(0.220670387, 0, 0.0704225376, 0)
+StatsName.Size = UDim2.new(0, 270, 0, 20)
+StatsName.Font = Enum.Font.Code
+StatsName.TextColor3 = Color3.fromRGB(255, 255, 255)
+StatsName.TextScaled = true
+StatsName.TextSize = 15
+StatsName.TextStrokeTransparency = 0
+StatsName.TextWrapped = true
+
+local StatsPicture = Instance.new("ImageLabel", StatsFrame)
+StatsPicture.Name = "AntiGUI"
+StatsPicture.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+StatsPicture.BorderSizePixel = 0
+StatsPicture.Position = UDim2.new(0.0279329624, 0, 0.0704225376, 0)
+StatsPicture.Size = UDim2.new(0, 60, 0, 60)
+StatsPicture.Transparency = 1
+StatsPicture.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+local StatsHealthBackground = Instance.new("Frame", StatsFrame)
+StatsHealthBackground.Name = "AntiGUI"
+StatsHealthBackground.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+StatsHealthBackground.BorderSizePixel = 0
+StatsHealthBackground.Position = UDim2.new(0.215083793, 0, 0.348234326, 0)
+StatsHealthBackground.Size = UDim2.new(0, 270, 0, 20)
+StatsHealthBackground.Transparency = 1
+
+local StatsHealthBar = Instance.new("Frame", StatsHealthBackground)
+StatsHealthBar.Name = "AntiGUI"
+StatsHealthBar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+StatsHealthBar.BorderSizePixel = 0
+StatsHealthBar.Position = UDim2.new(-0.00336122862, 0, 0.164894029, 0)
+StatsHealthBar.Size = UDim2.new(0, 130, 0, 20)
+
+local StatsGradient1 = Instance.new("UIGradient", StatsTop)
+StatsGradient1.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(185, 160, 230)), ColorSequenceKeypoint.new(1, Color3.fromRGB(100, 90, 155))}
+StatsGradient1.Rotation = 90
+
+local StatsGradient2 = Instance.new("UIGradient", StatsFrame)
+StatsGradient2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(50, 50, 50)), ColorSequenceKeypoint.new(1, Color3.fromRGB(0, 0, 0))}
+StatsGradient2.Rotation = 90
+
+local StatsGradient3 = Instance.new("UIGradient", StatsHealthBackground)
+StatsGradient3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(60, 60, 60)), ColorSequenceKeypoint.new(1, Color3.fromRGB(30, 30, 30))}
+StatsGradient3.Rotation = 90
+
+local StatsGradient4 = Instance.new("UIGradient", StatsHealthBar)
+StatsGradient4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(185, 160, 230)), ColorSequenceKeypoint.new(1, Color3.fromRGB(100, 90, 155))}
+StatsGradient4.Rotation = 90
