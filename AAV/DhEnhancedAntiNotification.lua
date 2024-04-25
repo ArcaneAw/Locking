@@ -153,7 +153,7 @@ Frame.Size = UDim2.new(0, 200, 0, 110)
 
 TopLine.Parent = Stats
 TopLine.AnchorPoint = Vector2.new(1, 0.5)
-TopLine.BackgroundColor3 = Color3.fromRGB(147, 80, 186)
+TopLine.BackgroundColor3 = getgenv().NotificationColor
 TopLine.BackgroundTransparency = 0
 TopLine.BorderColor3 = Color3.fromRGB(60, 60, 60)
 TopLine.BorderSizePixel = 0
@@ -162,7 +162,7 @@ TopLine.Size = UDim2.new(0, 200, 0, 1)
 
 TopLine2.Parent = Stats
 TopLine2.AnchorPoint = Vector2.new(1, 0.5)
-TopLine2.BackgroundColor3 = Color3.fromRGB(147, 80, 186)
+TopLine2.BackgroundColor3 = getgenv().NotificationColor
 TopLine2.BackgroundTransparency = 0
 TopLine2.BorderColor3 = Color3.fromRGB(60, 60, 60)
 TopLine2.BorderSizePixel = 0
