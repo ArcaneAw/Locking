@@ -1,9 +1,9 @@
 local CC = game:GetService"Workspace".CurrentCamera
-    local Plr
-    local enabled = false
-    local accomidationfactor = 0.121
-    local mouse = game.Players.LocalPlayer:GetMouse()
-    local placemarker = Instance.new("Part", game.Workspace)
+local Plr
+local enabled = false
+local accomidationfactor = 0.11625
+local mouse = game.Players.LocalPlayer:GetMouse()
+local placemarker = Instance.new("Part", game.Workspace)
 
     function makemarker(Parent, Adornee, Color, Size, Size2)
         local e = Instance.new("BillboardGui", Parent)
@@ -104,7 +104,7 @@ local CC = game:GetService"Workspace".CurrentCamera
     setreadonly(mt, false)
     mt.__namecall = newcclosure(function(...)
         local args = {...}
-        if enabled and getnamecallmethod() == "FireServer" and args[2] == "UpdateMousePos" then
+        if enabled and getnamecallmethod() == "FireServer" and args[2] == "UpdateMousePosI" then
             args[3] = Plr.Character.HumanoidRootPart.Position+(Plr.Character.HumanoidRootPart.Velocity*accomidationfactor)
             return old(unpack(args))
         end
