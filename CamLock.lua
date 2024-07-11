@@ -1,13 +1,14 @@
-getgenv().AimPart = "HumanoidRootPart"
-		getgenv().AimlockKey = "q"
-		getgenv().AimRadius = 30
-		getgenv().ThirdPerson = true
-		getgenv().FirstPerson = true
-		getgenv().TeamCheck = false
-		getgenv().PredictMovement = true
-		getgenv().PredictionVelocity = 9
-		local L_27_, L_28_, L_29_, L_30_ =
-			game:GetService "Players",
+--[[getgenv().AimPart = "HumanoidRootPart"
+getgenv().AimlockKey = "q"
+getgenv().AimRadius = 30
+getgenv().ThirdPerson = true
+getgenv().FirstPerson = true
+getgenv().TeamCheck = false
+getgenv().PredictMovement = true
+getgenv().PredictionVelocity = 9
+]]
+local L_27_, L_28_, L_29_, L_30_ =
+		game:GetService "Players",
 		game:GetService "UserInputService",
 		game:GetService "RunService",
 		game:GetService "StarterGui"
