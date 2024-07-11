@@ -1,33 +1,31 @@
-               getgenv().Target = true
-    getgenv().Key = Enum.KeyCode.E
+--[[
+getgenv().Target = true
+getgenv().Key = Enum.KeyCode.E
 getgenv().Prediction = 0.107
 getgenv().ChatMode = true
 getgenv().NotifMode = true
-    getgenv().PartMode = true
-    getgenv().AirshotFunccc = true
-    getgenv().Partz = "HumanoidRootPart"
+getgenv().PartMode = true
+getgenv().AirshotFunccc = true
+getgenv().Partz = "HumanoidRootPart"
 getgenv().AutoPrediction = true
---
-    _G.Types = {
-        Ball = Enum.PartType.Ball,
-        Block = Enum.PartType.Block, 
-        Cylinder = Enum.PartType.Cylinder
-    }
-    
-    --variables                 
-    	local Tracer = Instance.new("Part", game.Workspace)
-    Tracer.Name = "gay trace"	
-    Tracer.Anchored = true		
-    Tracer.CanCollide = false
-    Tracer.Transparency = 0.7
-    Tracer.Parent = game.Workspace	
-    Tracer.Shape = _G.Types.Block
-    Tracer.Size = Vector3.new(7,10,7)
-    Tracer.Color = Color3.fromRGB(255,0,0)
-    
-    --
-    local plr = game.Players.LocalPlayer
-local mouse = plr:GetMouse()
+_G.Types = {
+   Ball = Enum.PartType.Ball,
+   Block = Enum.PartType.Block, 
+   Cylinder = Enum.PartType.Cylinder
+}
+]]
+local Tracer = Instance.new("Part", game.Workspace)
+Tracer.Name = "gay trace"	
+Tracer.Anchored = true		
+Tracer.CanCollide = false
+Tracer.Transparency = 0.7
+Tracer.Parent = game.Workspace	
+Tracer.Shape = _G.Types.Block
+Tracer.Size = Vector3.new(7,10,7)
+Tracer.Color = Color3.fromRGB(255,0,0)
+
+local plr = game.Players.LocalPlayer
+local mouse = game.Players.LocalPlayer:GetMouse()
 local Runserv = game:GetService("RunService")
 
 circle = Drawing.new("Circle")
@@ -121,7 +119,7 @@ end
 	setreadonly(rawmetatable, false)
 	rawmetatable.__namecall = newcclosure(function(...)
 		local args = {...}
-		if Locking and getnamecallmethod() == "FireServer" and args[2] == "UpdateMousePos" then
+		if Locking and getnamecallmethod() == "FireServer" and args[2] == "UpdateMousePosI" then
 			args[3] = Plr.Character[getgenv().Partz].Position+(Plr.Character[getgenv().Partz].Velocity*Prediction)
 			return old(unpack(args))
 		end
